@@ -7,3 +7,7 @@
 
 - Because a SAML assertion is a temporary proof of authentication, not a permanent credential. If it were valid forever, someone who obtained a copy of the assertion could potentially reuse it indefinitely. By giving it a limited validity window, the risk is reduced because the assertion eventually expires and can no longer be used.
 
+
+***The application knows the assertion is genuine because it is signed. What does the application need to have been given, ahead of time, to check that signature?***
+
+- The application needs the Identity Provider's public key ahead of time. It uses that public key to verify the digital signature created with the IdP's private key.
