@@ -35,7 +35,7 @@ ID token: “This is Christopher, and the IdP authenticated him.”
 
 - The purpose is to help prevent replay attacks, where an attacker tries to reuse an ID token from an earlier authentication.
 
-- How it works
+***How it works?***
 
 1- The application creates a nonce. For example, abc123.
 
