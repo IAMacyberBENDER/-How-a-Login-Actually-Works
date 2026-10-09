@@ -29,8 +29,31 @@ It is meant to be presented to a resource server/API to access resources on the 
 
 ID token: “This is Christopher, and the IdP authenticated him.”
 
-Access token: “Christopher authorized this application to access this API.”
+***What is the nonce for?***
 
-- Why can’t we use one in place of the other?
+- the nonce is a random value the application creates and sends to the Identity Provider (IdP) during the authentication request.
 
- You don't use one in place of the other because they have different purposes and audiences. An ID token is not an API authorization credential, and an access token is not the application's proof of the user's identity.
+- The purpose is to help prevent replay attacks, where an attacker tries to reuse an ID token from an earlier authentication.
+
+- How it works
+
+1- The application creates a nonce. For example, abc123.
+
+2- The application sends the nonce to the IdP as part of the authentication request.
+
+3- The IdP authenticates the user and includes that same nonce in the ID token it returns.
+
+4- The application checks the nonce. It compares the value in the ID token with the original value it stored.
+
+5- Access token: “Christopher authorized this application to access this API.”
+
+
+***Why can’t we use one in place of the other?***
+
+ You don't use one in place of the other because they have different purposes and audiences. An ID token is not an API authorization credential, and an access token is not the application's proof of the user's identity. 
+
+
+
+ ***The identity provider publishes a discovery document at a well-known address, listing its endpoints and its public signing keys. Why is that better than every application hard-coding those values?***
+
+ - 
