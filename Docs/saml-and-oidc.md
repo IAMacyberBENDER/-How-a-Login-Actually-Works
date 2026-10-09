@@ -31,4 +31,6 @@ ID token: “This is Christopher, and the IdP authenticated him.”
 
 Access token: “Christopher authorized this application to access this API.”
 
-- You don't use one in place of the other because they have different purposes and audiences. An ID token is not an API authorization credential, and an access token is not the application's proof of the user's identity.
+- Why can’t we use one in place of the other?
+
+ You don't use one in place of the other because they have different purposes and audiences. An ID token is not an API authorization credential, and an access token is not the application's proof of the user's identity.
