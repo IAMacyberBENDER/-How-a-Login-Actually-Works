@@ -58,8 +58,12 @@ ID token: “This is Christopher, and the IdP authenticated him.”
 
  - A discovery document provides a centralized way to manage important configuration information, such as the IdP's endpoints and the location of its public signing keys.
 
-If we hard-coded this information into every application, we would have to update each application individually whenever something changed. That would be time-consuming and difficult to scale as the company added more applications.
+If we hard-coded this information into every application, we would have to update each application individually whenever
+something changed. That would be time-consuming and difficult to scale as the company added more applications.
 
 With a discovery document, applications can retrieve the IdP's configuration from a standard location. When the configuration changes, applications can discover the updated information instead of relying entirely on hard-coded values.
 
 This makes the process easier to manage, more efficient, less time-consuming, and easier to scale. It can also reduce configuration errors and help applications keep their configuration up to date, improving security.
+
+
+                                 
