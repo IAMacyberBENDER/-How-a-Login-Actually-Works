@@ -56,7 +56,8 @@ ID token: “This is Christopher, and the IdP authenticated him.”
 
  ***The identity provider publishes a discovery document at a well-known address, listing its endpoints and its public signing keys. Why is that better than every application hard-coding those values?***
 
-- A discovery document provides a centralized way to manage important configuration information, such as the IdP's endpoints and the location of its public signing keys.
+
+A discovery document provides a centralized way to manage important configuration information, such as the IdP's endpoints and the location of its public signing keys.
 
 If we hard-coded this information into every application, we would have to update each application individually whenever
 something changed. That would be time-consuming and difficult to scale as the company added more applications.
