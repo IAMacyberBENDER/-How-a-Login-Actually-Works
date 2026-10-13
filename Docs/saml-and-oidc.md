@@ -88,4 +88,14 @@ This makes the process easier to manage, more efficient, less time-consuming, an
 
 - Where you commonly encounter each protocol: SAML is widely used for enterprise and workforce single sign-on. OIDC is widely used for modern web applications, mobile applications, and identity integrations.
 
+
+***If OIDC Is Newer, Why Is SAML Still Everywhere?***
+
+- Enterprise software has long lifespans: Many organizations already have applications that rely on SAML and have been working reliably for years.
+
+- Migrations are expensive and risky: Replacing an existing SAML integration requires time, money, testing, and coordination. It can also introduce new risks, especially when authentication supports critical business systems.
+
+- A working integration does not always need to be replaced: If a SAML integration works reliably and meets the organization's security requirements, there may be little business value in replacing it simply because a newer protocol exists.
+
+- Organizations often use both protocols: OIDC is often a natural choice for new applications, especially for modern application and API integrations. SAML remains important because organizations must continue supporting the systems they already have.
                                  
