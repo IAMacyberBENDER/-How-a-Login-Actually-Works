@@ -84,7 +84,7 @@ This makes the process easier to manage, more efficient, less time-consuming, an
 
 - The message format and vocabulary: SAML uses XML and a SAML assertion. OIDC uses JSON, and its ID tokens use the JWT format.
 
-- Whether there is a direct server-to-server call in the flow: In a typical SAML browser-based flow, the IdP sends a SAML response containing the assertion through the browser to the application. In the common OIDC Authorization Code Flow, the IdP returns an authorization code through the browser, and the application exchanges that code directly with the IdP's token endpoint to obtain tokens.
+- Direct server-to-server call in the flow: In a typical SAML browser-based flow, the IdP sends a SAML response containing the assertion through the browser to the application. In the common OIDC Authorization Code Flow, the IdP returns an authorization code through the browser, and the application exchanges that code directly with the IdP's token endpoint to obtain tokens.
 
 - Where you commonly encounter each protocol: SAML is widely used for enterprise and workforce single sign-on. OIDC is widely used for modern web applications, mobile applications, and identity integrations.
 
