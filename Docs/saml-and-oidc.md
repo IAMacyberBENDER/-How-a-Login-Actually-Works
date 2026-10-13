@@ -67,4 +67,25 @@ With a discovery document, applications can retrieve the IdP's configuration fro
 This makes the process easier to manage, more efficient, less time-consuming, and easier to scale. It can also reduce configuration errors and help applications keep their configuration up to date, improving security.
 
 
+
+***What Is Genuinely the Same?***
+
+- The IdP holds the credentials: The user authenticates with the IdP, and the application never receives the user's password.
+
+- The browser starts the journey: When a user tries to access an application, the browser participates in the authentication flow and carries messages between the application and the IdP.
+
+- The IdP issues signed information: SAML uses a signed assertion inside a SAML response, while OIDC typically uses a signed ID token containing claims about the user and authentication.
+
+- The information identifies its intended audience and expires: The application checks that the assertion or token is intended for it and has not expired. These checks help prevent information intended for another application or an earlier authentication from being accepted incorrectly.
+
+- Trust is configured in advance: The application must know which IdP it trusts and have the necessary configuration to validate its signed information before accepting it.
+
+***What Is Different?***
+
+- The message format and vocabulary: SAML uses XML and a SAML assertion. OIDC uses JSON, and its ID tokens use the JWT format.
+
+- Whether there is a direct server-to-server call in the flow: In a typical SAML browser-based flow, the IdP sends a SAML response containing the assertion through the browser to the application. In the common OIDC Authorization Code Flow, the IdP returns an authorization code through the browser, and the application exchanges that code directly with the IdP's token endpoint to obtain tokens.
+
+- Where you commonly encounter each protocol: SAML is widely used for enterprise and workforce single sign-on. OIDC is widely used for modern web applications, mobile applications, and identity integrations.
+
                                  
