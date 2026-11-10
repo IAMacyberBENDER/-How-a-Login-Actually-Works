@@ -27,7 +27,6 @@ It is meant for the application (client). It contains identity information about
 
 It is meant to be presented to a resource server/API to access resources on the user's behalf.
 
-ID token: “This is Christopher, and the IdP authenticated him.”
 
 ***What is the nonce for?***
 
